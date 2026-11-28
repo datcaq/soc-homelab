@@ -221,3 +221,58 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SOC lab: local VM state, media and private evidence
+virtual-machines/
+iso-images/
+local-data/
+raw-logs/
+private-evidence/
+backups/
+snapshots/
+SOC_Home_Lab_Implementation_Handbook.docx
+*.iso
+*.ova
+*.ovf
+*.vmdk
+*.vdi
+*.vhd
+*.vhdx
+*.avhdx
+*.vmx
+*.vmxf
+*.vmsd
+*.vmsn
+*.vmem
+*.vmss
+*.nvram
+*.evtx
+*.pcap
+*.pcapng
+alerts.json
+archives.json
+
+# SOC lab: credentials, certificates and installer output
+.env.*
+!.env.example
+credentials/
+secrets/
+client.keys
+authd.pass
+wazuh-passwords.txt
+wazuh-install-files*
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Reviewed text fixtures and Python report output
+!/sample-logs/sanitized/**/*.log
+!/sample-logs/sanitized/**/alerts.json
+!/sample-logs/sanitized/**/archives.json
+/automation/generated/
+/reports/generated/
